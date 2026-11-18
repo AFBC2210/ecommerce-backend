@@ -115,4 +115,29 @@ class OrderServiceTest {
         assertTrue(result.isEmpty());
         verify(orderRepository).findById(99L);
     }
+
+    @Test
+    @DisplayName("cancelOrder: lanza IllegalStateException si la orden ya esta SHIPPED y nunca guarda")
+    void testCancelOrder_ThrowsIllegalState_WhenShipped() {
+        // creamos una orden ficticia que ya fue enviada (SHIPPED)
+        OrderEntity shippedOrder = new OrderEntity();
+        shippedOrder.setId(1L);
+        shippedOrder.setCustomerId(1L);
+        shippedOrder.setTotalAmount(120000.0);
+        shippedOrder.setStatus("SHIPPED");
+
+        // Entrenamos al repositorio falso para que devuelva esa orden enviada cuando busquen el ID 1
+        when(orderRepository.findById(1L)).thenReturn(Optional.of(shippedOrder));
+
+        //comprobamos que al intentar cancelarla lance IllegalStateException
+        IllegalStateException ex = assertThrows(IllegalStateException.class,
+                () -> orderService.cancelOrder(1L));
+
+        // Verificamos que el mensaje de error sea exactamente el que definiste en OrderService
+        assertEquals("No se puede cancelar una orden que ya fue enviada (SHIPPED)", ex.getMessage());
+
+        // Garantizamos que NUNCA se intentó guardar cambios en la base de datos
+        verify(orderRepository, never()).save(any(OrderEntity.class));
+    }
+
 }
