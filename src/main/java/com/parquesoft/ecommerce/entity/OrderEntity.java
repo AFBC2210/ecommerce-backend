@@ -24,7 +24,7 @@ public class OrderEntity {
     @Schema(example = "2026-11-13T19:30:00")
     private LocalDateTime orderDate;
 
-    @Column(name = "total_amount", nullable = false)
+    @Column(name = "total_amount", nullable = false, columnDefinition = "numeric(12,2)")
     @Schema(example = "185000.50")
     private Double totalAmount;
 
