@@ -17,7 +17,7 @@ public class CustomerEntity {
     private String email;
 
     @Column(name = "loyalty_points", nullable = false)
-    private int loyalityPoints = 0;
+    private int loyaltyPoints = 0;
 
     @Column(name = "is_active", nullable = false)
     private boolean isActive = true;
@@ -25,12 +25,12 @@ public class CustomerEntity {
     public CustomerEntity() {
     }
 
-    public CustomerEntity(Long id, boolean isActive, String fullName, String email, int loyalityPoints) {
+    public CustomerEntity(Long id, boolean isActive, String fullName, String email, int loyaltyPoints) {
         this.id = id;
         this.isActive = isActive;
         this.fullName = fullName;
         this.email = email;
-        this.loyalityPoints = loyalityPoints;
+        this.loyaltyPoints = loyaltyPoints;
     }
 
     public Long getId() {
@@ -57,12 +57,12 @@ public class CustomerEntity {
         this.email = email;
     }
 
-    public int getLoyalityPoints() {
-        return loyalityPoints;
+    public int getLoyaltyPoints() {
+        return loyaltyPoints;
     }
 
-    public void setLoyalityPoints(int loyalityPoints) {
-        this.loyalityPoints = loyalityPoints;
+    public void setLoyaltyPoints(int loyaltyPoints) {
+        this.loyaltyPoints = loyaltyPoints;
     }
 
     public boolean isActive() {

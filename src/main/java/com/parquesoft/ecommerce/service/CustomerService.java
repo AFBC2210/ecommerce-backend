@@ -52,7 +52,7 @@ public class CustomerService {
                 .orElseThrow(() -> new IllegalArgumentException("Cliente no encontrado con ID: " + id));
 
         existing.setFullName(details.getFullName());
-        existing.setLoyalityPoints(details.getLoyalityPoints());
+        existing.setLoyaltyPoints(details.getLoyaltyPoints());
 
         return customerRepository.save(existing);
     }
