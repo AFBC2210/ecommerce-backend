@@ -1,2 +1,3 @@
 com\parquesoft\ecommerce\EcommerceApplicationTests.class
 com\parquesoft\ecommerce\service\CategoryServiceTest.class
+com\parquesoft\ecommerce\service\OrderServiceTest.class

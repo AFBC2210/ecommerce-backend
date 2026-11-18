@@ -3,6 +3,7 @@ C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\conf
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\controller\AuthController.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\controller\CategoryController.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\controller\CustomerController.java
+C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\controller\OrderController.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\controller\ProductController.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\dto\AuthResponse.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\dto\LoginRequest.java
@@ -10,10 +11,12 @@ C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\dto\
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\EcommerceApplication.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\entity\CategoryEntity.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\entity\CustomerEntity.java
+C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\entity\OrderEntity.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\entity\ProductEntity.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\entity\UserEntity.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\repository\CategoryRepository.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\repository\CustomerRepository.java
+C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\repository\OrderRepository.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\repository\ProductRepository.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\repository\UserRepository.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\security\CustomerUserDetailService.java
@@ -22,4 +25,5 @@ C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\secu
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\service\AuthService.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\service\CategoryService.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\service\CustomerService.java
+C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\service\OrderService.java
 C:\Users\ASUS\IdeaProjects\ecommerce\src\main\java\com\parquesoft\ecommerce\service\ProductService.java

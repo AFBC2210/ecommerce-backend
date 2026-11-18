@@ -16,7 +16,7 @@ public class CustomerEntity {
     @Column( nullable = false, unique = true, length = 100)
     private String email;
 
-    @Column(name = "loyality_points", nullable = false)
+    @Column(name = "loyalty_points", nullable = false)
     private int loyalityPoints = 0;
 
     @Column(name = "is_active", nullable = false)

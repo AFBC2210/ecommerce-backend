@@ -4,13 +4,17 @@ com\parquesoft\ecommerce\entity\CategoryEntity.class
 com\parquesoft\ecommerce\controller\ProductController.class
 com\parquesoft\ecommerce\dto\AuthResponse.class
 com\parquesoft\ecommerce\entity\ProductEntity.class
+com\parquesoft\ecommerce\entity\OrderEntity.class
 com\parquesoft\ecommerce\EcommerceApplication.class
 com\parquesoft\ecommerce\security\CustomerUserDetailService.class
+com\parquesoft\ecommerce\repository\OrderRepository.class
 com\parquesoft\ecommerce\controller\AuthController.class
 com\parquesoft\ecommerce\service\CategoryService.class
+com\parquesoft\ecommerce\service\OrderService.class
 com\parquesoft\ecommerce\security\JwtTokenProvider.class
 com\parquesoft\ecommerce\controller\CustomerController.class
 com\parquesoft\ecommerce\controller\CategoryController.class
+com\parquesoft\ecommerce\controller\OrderController.class
 com\parquesoft\ecommerce\repository\CustomerRepository.class
 com\parquesoft\ecommerce\repository\ProductRepository.class
 com\parquesoft\ecommerce\repository\UserRepository.class
