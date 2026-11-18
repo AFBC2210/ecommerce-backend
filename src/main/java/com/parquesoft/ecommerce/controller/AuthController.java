@@ -5,11 +5,11 @@ import com.parquesoft.ecommerce.dto.LoginRequest;
 import com.parquesoft.ecommerce.dto.RegisterRequest;
 import com.parquesoft.ecommerce.service.AuthService;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
+/*import io.swagger.v3.oas.annotations.Parameter;*/
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import jakarta.persistence.Access;
+/*import jakarta.persistence.Access;*/
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -32,10 +32,13 @@ public class AuthController {
                     @ApiResponse(responseCode = "400", description = "Credenciales invalidas")
     })
     public ResponseEntity<AuthResponse> login(
+            /*
             @Parameter(description = "Email", required = true, example = "test@parquesoft.com")
             @PathVariable String email,
             @Parameter(description = "Password", required = true, example = "*********")
             @PathVariable String password,
+
+             */
             @RequestBody LoginRequest request) {
 
         return ResponseEntity.ok(authService.login(request));
