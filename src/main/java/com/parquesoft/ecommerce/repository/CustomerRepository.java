@@ -18,6 +18,6 @@ public interface CustomerRepository extends JpaRepository<CustomerEntity, Long> 
 
     List<CustomerEntity> findByIsActiveTrue();
 
-    @Query("SELECT c FROM CustomerEntity c WHERE c.loyalityPoints >= :minPoints AND c.isActive = true ORDER BY c.loyalityPoints DESC")
+    @Query("SELECT c FROM CustomerEntity c WHERE c.loyaltyPoints >= :minPoints AND c.isActive = true ORDER BY c.loyaltyPoints DESC")
     List<CustomerEntity> findVipCustomers(@Param("minPoints") int minPoints);
 }
